@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditNoteActivity">
+
+
+    <TextView
+        android:id="@+id/welcomeMessage_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Changed your mind?"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <TextView
+        android:id="@+id/welcomeSubtext_TV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not to worry, edit note below!"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/welcomeMessage_TV"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@id/welcomeMessage_TV"
+        app:layout_constraintTop_toBottomOf="@id/welcomeMessage_TV"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+
+    <EditText
+        android:id="@+id/noteTitle_ET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:hint="This will show title of your note here.."
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.29000002" />
+
+
+    <EditText
+        android:id="@+id/noteContent_ET"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="Note will come here...!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/noteTitle_ET"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/noteTitle_ET"
+        app:layout_constraintTop_toBottomOf="@+id/noteTitle_ET"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <Button
+        android:id="@+id/editNote_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:text="Edit Note!"
+        android:textColor="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/noteContent_ET"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/noteContent_ET"
+        app:layout_constraintTop_toBottomOf="@+id/noteContent_ET"
+        app:layout_constraintVertical_bias="0.159" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
