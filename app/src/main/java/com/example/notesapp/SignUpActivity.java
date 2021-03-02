@@ -126,11 +126,6 @@ public class SignUpActivity extends AppCompatActivity {
 
         nameReference.setValue(name);
 
-
-
-
-
-
     }
 
     private void hideProgressBar() {

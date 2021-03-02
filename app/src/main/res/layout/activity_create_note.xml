@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/app4"
     tools:context=".CreateNoteActivity">
 
     <EditText
@@ -11,44 +12,43 @@
         android:layout_width="317dp"
         android:layout_height="66dp"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="230dp"
         android:layout_marginEnd="56dp"
+        android:layout_marginBottom="80dp"
         android:backgroundTint="@color/colorPrimary"
         android:hint="Please enter title for your note here...!"
         app:layout_constraintBottom_toTopOf="@+id/noteContent_ET"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/noteContent_ET"
         android:layout_width="320dp"
         android:layout_height="68dp"
-        android:layout_marginStart="26dp"
         android:layout_marginEnd="56dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="280dp"
         android:backgroundTint="@color/colorPrimary"
         android:hint="Write notes here...!"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/createfinalNote_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.828"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/createfinalNote_btn"
         android:layout_width="336dp"
         android:layout_height="54dp"
-        android:layout_marginStart="26dp"
         android:layout_marginEnd="26dp"
-        android:layout_marginBottom="208dp"
+        android:layout_marginBottom="198dp"
         android:background="@color/colorPrimary"
         android:text="Create Note!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/noteContent_ET"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="@+id/noteContent_ET" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

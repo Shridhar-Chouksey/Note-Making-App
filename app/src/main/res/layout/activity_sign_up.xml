@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/app4"
     tools:context=".SignUpActivity">
 
     <EditText
         android:id="@+id/email_ET"
-        android:layout_width="280dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="6dp"
@@ -26,7 +27,7 @@
 
     <EditText
         android:id="@+id/password_ET"
-        android:layout_width="280dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="40dp"
@@ -42,7 +43,7 @@
 
     <EditText
         android:id="@+id/password_Again"
-        android:layout_width="280dp"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:backgroundTint="@color/colorPrimary"
@@ -58,19 +59,15 @@
         android:id="@+id/signUp_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="140dp"
-        android:layout_marginBottom="260dp"
         android:background="#EBD30D"
         android:text="Sign Up"
         android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.325"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_Again"
-        app:layout_constraintVertical_bias="0.458" />
+        app:layout_constraintVertical_bias="0.351" />
 
     <TextView
         android:id="@+id/textView3"
@@ -80,26 +77,30 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="16dp"
+        android:fontFamily="serif"
         android:text="Welcome!"
-        android:textColor="#DB0CD9"
-        android:textSize="36sp"
+        android:textColor="#FF0000"
+        android:textSize="50sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.254"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="294dp"
+        android:layout_height="60dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="22dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="70dp"
+        android:fontFamily="sans-serif-condensed"
         android:soundEffectsEnabled="true"
-        android:text="One step,signUp!"
-        android:textColor="#156AF7"
-        android:textSize="30sp"
+        android:text=" One step,signUp!"
+        android:textColor="#04104F"
+        android:textSize="39sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,28 +109,29 @@
     <ProgressBar
         android:id="@+id/progressBar2"
         style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="241dp"
-        android:layout_height="20dp"
+        android:layout_width="282dp"
+        android:layout_height="18dp"
         android:layout_marginStart="60dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="50dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
     <EditText
         android:id="@+id/name_ET"
-        android:layout_width="278dp"
+        android:layout_width="350dp"
         android:layout_height="49dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
         android:backgroundTint="@color/colorPrimary"
         android:ems="10"
         android:hint="Please enter your name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/progressBar2" />
 
